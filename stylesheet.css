@@ -4,19 +4,25 @@ body{
   padding: 0;
   margin: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 /*
 Resets defaults
 */
+h1{
+  padding: 20px;
+}
 div {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   min-width: 300px;
-  padding: 10px;
+  padding: 5px;
 }
 /* 
 responsible text for paragraphs
-
 
 */
 @-ms-viewport{
@@ -25,7 +31,17 @@ responsible text for paragraphs
 /*
 responsive viewport
 */
-body {
+.nav{
+margin: 50px;
+}
+span{
+  height: 25px;
+  float: left;
+  margin-right: 5px;
+  border-right: 1px solid #aaa;
+  padding: 0 30px;
+}
+.body {
   margin: 40px;
 }
 .wrapper {
@@ -48,6 +64,10 @@ body {
 .One{
   grid-column: col / span 2;
   grid-row: row ;
+}
+.two{
+  grid-column: 2;
+  grid-row: 2;
 }
 /*
 box layout from https://codepen.io/rachelandrew/pen/oXKgeQ 
