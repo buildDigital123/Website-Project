@@ -4,6 +4,9 @@ body{
   padding: 0;
   margin: 0;
 }
+/*
+Resets defaults
+*/
 div {
   max-width: 600px;
   margin-left: auto;
@@ -11,6 +14,44 @@ div {
   min-width: 300px;
   padding: 10px;
 }
+/* 
+responsible text for paragraphs
+
+
+*/
 @-ms-viewport{
   width: device-width;
 }
+/*
+responsive viewport
+*/
+body {
+  margin: 40px;
+}
+.wrapper {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 200px  ;
+		grid-template-rows: [row] auto [row] auto [row] ;
+		background-color: #fff;
+		color: #444;
+	}
+
+	.header-img {
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 150%;
+
+  }
+.One{
+  grid-column: col / span 2;
+  grid-row: row ;
+}
+/*
+
+
+
+
+*/
