@@ -1,0 +1,66 @@
+#wrapper{
+    flex:1;
+    display:flex;
+    flex-direction: column ;
+}
+.image{
+padding: 10px;
+}
+.image img{
+    width:100%;
+    max-width: 700px;
+}
+#img1{
+    display:block;
+}
+#img2{
+    display:none;
+
+}
+#img3{
+    display:none;
+
+}
+#img4{
+    display:none
+}
+#img5{
+    display:none
+}
+.googleMaps div{
+    display: inline-block;    
+
+
+
+}
+.nav li{
+    list-style: none;
+        }
+        .nav a:link{
+            color:red;
+            text-decoration: none;
+    
+    
+        }
+        .image .buttonRight{
+            position: relative;
+        
+            background: blue;
+            border-radius: 3px 0 0 3px;
+            max-width: 10%;
+            height:100%;
+            left:90%;
+        }
+        .image .buttonLeft{
+            position: relative;
+            border-radius: 3px 0 0 3px;
+            max-width: 10%;
+                height:100%;
+            background: red;
+        
+        }
+        header{
+            display: flex;
+            flex: 1;
+        flex-direction: column;
+        }

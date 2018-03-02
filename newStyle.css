@@ -1,0 +1,275 @@
+
+html{
+
+    box-sizing: border-box;
+
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body{
+    margin:0px;
+    padding: 0px
+}
+body{
+    margin:10px;
+}
+#wrapper{
+    background-color:whitesmoke;
+    display: grid;
+    height:auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; /* top row is 100px in height */
+    grid-auto-rows: 200px;     /* any new rows created are 200px in height */
+    grid-gap: 10px;
+    max-width: 1360px;
+    grid-template-areas: "header  header header header"
+                         "text text image image"
+                          "text text googleMaps googleMaps"
+                             " text text  location location"
+                          "footer footer footer footer";
+
+
+}
+.location{
+    grid-area: location;
+    padding:10px;
+    
+    margin:20px;
+
+}
+
+
+.googleMaps{
+    display:line-block;
+   
+    grid-area: googleMaps;
+    overflow: hidden;
+    padding:10px;
+    align-self: center;
+
+    margin:20px;
+}
+.googleMaps iframe{
+    padding:10;
+    min-height: 200px;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    align-self: center;
+
+}
+
+header{
+    grid-area:header;
+
+    background-color: khaki;
+
+    padding:10px;
+}
+header div  {
+text-align: center;
+margin: 4px;
+}
+
+div a{
+    margin: 12px;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    opacity: 0.5;
+
+}
+
+header h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+.text{
+    padding:30px;
+    grid-area:text;
+    max-width: 700px;
+    align-items: stretch;
+
+
+}
+.text p{
+    max-width: 100%;
+
+}
+
+.image{
+    align-self: center;
+    grid-column: 2 span 2;
+    grid-area:image;
+    padding: 40px;
+    margin:0;
+}
+.imageContainer .buttonRight .buttonLeft{
+}
+
+.image .buttonRight{
+    position:  block;
+
+    background: blue;
+    border-radius: 3px 0 0 3px;
+    max-width: 10%;
+    left:90%;
+    z-index: 1;
+
+}
+.image .buttonLeft{
+    position:  block;
+    border-radius: 3px 0 0 3px;
+    max-width: 10%;
+    background: red;
+    z-index: 1;
+    right:20%;
+    overflow: hidden;
+
+}
+.image img{
+max-width: 320px;
+    padding:0;
+    margin:0;
+    height: auto;
+    max-height:200px;
+}
+.footer{
+    padding:10px;
+
+    grid-area:footer;
+width:100%;
+max-height:50px;
+
+}
+.footer p{
+    justify-self:left;
+
+}
+#img1{
+    width: 100%;
+    height:auto;
+
+    display:block;
+}
+#img2{
+    width: 100%;
+    height:auto;
+
+    display:none;
+
+
+}
+#img3{
+    width: 100%;
+    height:auto;
+
+    display:none;
+
+
+}
+.image img:hover{
+    opacity: 0.5;
+
+}
+.nav li{
+list-style: none;
+    }
+    .nav a:link{
+        color:red;
+        text-decoration: none;
+
+
+    }
+    @media screen and (max-width: 660px) {
+
+    #wrapper{
+        flex:1;
+        display:flex;
+        flex-direction: column ;
+    }
+    .image{
+    padding: 10px;
+    }
+    .image img{
+        width:100%;
+        max-width: 700px;
+        height:auto;
+    }  
+    .image img:hover{
+        opacity: 0.5;
+
+    }
+    #img1{
+        width: 100%;
+
+        display:block;
+    }
+    #img2{
+        width: 100%;
+        display:none;
+    
+    }
+    #img3{
+        width: 100%;
+
+        display:none;
+    
+    }
+    .googleMaps div{
+        display: inline-block;    
+    align-content: center;
+    
+    
+    }
+    .nav li{
+        list-style: none;
+            }
+            .nav a:link{
+                color:red;
+                text-decoration: none;
+        
+        
+            }
+            .image .buttonRight{
+                position: relative;
+            
+                background: blue;
+                border-radius: 3px 0 0 3px;
+                max-width: 10%;
+                height:100%;
+                left:90%;
+            }
+            .image .buttonLeft{
+                position: relative;
+                border-radius: 3px 0 0 3px;
+                max-width: 10%;
+                    height:100%;
+                background: red;
+            
+            }
+}
+a:link {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    color:black;
+
+    text-decoration: none;
+}
