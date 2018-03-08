@@ -1,0 +1,273 @@
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+body {
+    margin: 40px;
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #fff;
+    color: #444;
+}
+
+
+.page-footer {
+    padding: 2px;
+    background-color: black;
+    color: white;
+}
+
+
+.page-nav {
+    background-color: black;
+    overflow: hidden;
+    
+}
+
+/* Style the links inside the navigation bar */
+.page-nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 14px 16px;
+}
+
+/* Change the color of links on hover */
+.page-nav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.page-nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.page-nav {
+    border-bottom: 0;
+}
+
+.page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-nav ul li {
+    padding: 7px;
+    text-align: center;
+    width: 50%;
+}
+
+
+/* li+li selects every list item except the first one */
+
+.page-nav ul li+li {}
+
+@media screen and (min-width: 500px) {
+    .page-nav ul {
+        flex-wrap: nowrap;
+    }
+    .page-nav ul li {
+        width: auto;
+        /* reset the width from earlier */
+        flex: 1;
+        /* make each box take up the same amount of space */
+    }
+}
+
+
+label {
+    display: block;
+    /* instead of inline */
+    padding-bottom: 0.2em;
+    padding-top: 1em;
+}
+
+label strong {
+    display: block;
+    font-size: 0.9rem;
+    color: red;
+}
+
+.header-content {
+    max-width: auto;
+    font-size: 1.35rem;
+    text-align: center;
+    
+}
+
+/*Media query to change font-size on headers*/
+
+@media screen and (max-width: 425px) {
+    .header-content
+    
+    {
+        font-size: 1.00rem;
+    }
+        
+}
+
+/*Media query to change font-size on headers*/
+
+@media screen and (max-width: 425px) {
+    .title
+    
+    {
+        font-size: 0.80rem;
+    }
+        
+}
+
+.header-content {
+    /* https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/ */
+    color: white;
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    background-image: url(images/lionhomemod.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+/*Content Styling */
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: min(400px, auto);
+    grid-auto-flow: row;
+}
+
+.content p{
+    padding: 10px;
+}
+
+@media  screen and(max-width:600px){
+    .content{
+        display:flex;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+}
+
+
+.responsivecontent {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.musbeginning {padding: 7px;
+}
+
+/*Contact form styling*/
+
+input,
+textarea {
+    padding: 0.25em;
+    font-size: 1em;   
+    border: 1px solid #bbb;    
+    min-width: 30%;   
+    /* you can adjust this as you see fit */
+}
+
+input[type="submit"] {
+    /* https://developer.mozilla.org/en/docs/Web/CSS/Attribute_selectors */
+    display: inline-block;
+    /* if you used display:block; this would go right across the page - if you use inline-block the button will only be as wide as the text and the padding */
+    min-width: 0;
+    background-color: #b3ffff;
+    border: 0;
+    border-radius: 0.2em;
+    padding: 13px 30px;
+    /* top and bottom, left and right */
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    transition: background-color 0.2s ease;
+    /* less jarring transition from initial colour to hover colour */
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #1affff;
+    /* Changing the colour of the button when hovered over */
+}
+
+/*Museums List Grid*/
+
+
+.museumslist {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  padding-top: 20px;
+ 
+}
+
+.box {
+  background-color: #ccccff;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+  text-align: center;
+}
+
+.index 
+
+{
+  border: solid 1px black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.startimg
+
+{padding: 20px;}
+
+/*Galleries List Grid*/
+
+.gallerieslist {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  padding-top: 20px;
+ 
+}
+
+.box {
+  background-color: #ccccff;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 100%;
+  text-align: center;
+}
