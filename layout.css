@@ -21,13 +21,13 @@ body {
 
 .page-footer {
     padding: 2px;
-    background-color: black;
+    background-color: #94c6e8;
     color: white;
 }
 
 
 .page-nav {
-    background-color: black;
+    background-color: #94c6e8;
     overflow: hidden;
     
 }
@@ -43,8 +43,8 @@ body {
 
 /* Change the color of links on hover */
 .page-nav a:hover {
-    background-color: blue;
-    color: white;
+    background-color: #8eb5e5;
+    color: #eaedef;
 }
 
 /* Add a color to the active/current link */
@@ -106,6 +106,7 @@ label strong {
     max-width: auto;
     font-size: 1.35rem;
     text-align: center;
+   
     
 }
 
@@ -145,7 +146,7 @@ label strong {
     align-items: center;
     font-weight: bold;
     justify-content: center;
-    background-image: url(images/lionhomemod.jpg);
+    background-image: url( images/lionhomemod.jpg);
     background-size: 100% 100%;
     text-align: center;
 }
